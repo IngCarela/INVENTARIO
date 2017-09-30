@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="INVENTARIODBModel1StoreContainer" CdmEntityContainer="INVENTARIODBEntitiesModelo">
+    <EntitySetMapping Name="ARTICULOS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.ARTICULOS">
+        <MappingFragment StoreEntitySet="ARTICULOS">
+          <ScalarProperty Name="id_articulo" ColumnName="id_articulo" />
+          <ScalarProperty Name="Articulo" ColumnName="Articulo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTES">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.CLIENTES">
+        <MappingFragment StoreEntitySet="CLIENTES">
+          <ScalarProperty Name="Id_cliente" ColumnName="Id_cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLEFACTURAS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.DETALLEFACTURAS">
+        <MappingFragment StoreEntitySet="DETALLEFACTURAS">
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
+          <ScalarProperty Name="Id_articulos" ColumnName="Id_articulos" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Id_cliente" ColumnName="Id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOSFACTURAS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.ESTADOSFACTURAS">
+        <MappingFragment StoreEntitySet="ESTADOSFACTURAS">
+          <ScalarProperty Name="Id_estadoF" ColumnName="Id_estadoF" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FACTURAS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.FACTURAS">
+        <MappingFragment StoreEntitySet="FACTURAS">
+          <ScalarProperty Name="Id_factura" ColumnName="Id_factura" />
+          <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
+          <ScalarProperty Name="Id_estado" ColumnName="Id_estado" />
+          <ScalarProperty Name="Id_tipo" ColumnName="Id_tipo" />
+          <ScalarProperty Name="Id_usuario" ColumnName="Id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOSDEFACTURAS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.TIPOSDEFACTURAS">
+        <MappingFragment StoreEntitySet="TIPOSDEFACTURAS">
+          <ScalarProperty Name="Id_tipo" ColumnName="Id_tipo" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOSDEUSUARIOS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.TIPOSDEUSUARIOS">
+        <MappingFragment StoreEntitySet="TIPOSDEUSUARIOS">
+          <ScalarProperty Name="Id_tipoU" ColumnName="Id_tipoU" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOS">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.USUARIOS">
+        <MappingFragment StoreEntitySet="USUARIOS">
+          <ScalarProperty Name="Id_usuario" ColumnName="Id_usuario" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Id_tipoU" ColumnName="Id_tipoU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COTIZACIONES">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.COTIZACIONES">
+        <MappingFragment StoreEntitySet="COTIZACIONES">
+          <ScalarProperty Name="Id_cliente" ColumnName="Id_cliente" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Id_articulos" ColumnName="Id_articulos" />
+          <ScalarProperty Name="id_Cotizacion" ColumnName="id_Cotizacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_View">
+      <EntityTypeMapping TypeName="INVENTARIODBModel1.Factura_View">
+        <MappingFragment StoreEntitySet="Factura_View">
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Articulo" ColumnName="Articulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
